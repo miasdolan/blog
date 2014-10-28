@@ -2,5 +2,5 @@
     $host = "localhost";
     $username = "root";
     $password = "root";
-    $database = "blog_dv";
+    $database = "blog_db";
 
