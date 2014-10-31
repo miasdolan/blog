@@ -9,7 +9,7 @@
    // checks connection for error 
     if ($connection->connect_error) {
         // if theres an error the connection dies 
-        die ("Error:" . $connection->connect_error);
+        die ("<p>Error:" . $connection->connect_error . "</p>");
    }
  
    // create a database called exists
@@ -25,14 +25,14 @@
         if($query) {
            
      // print out success        
-            echo "Successfully created database: " . $database;
+            echo "<p>Successfully created database: " . $database . "</p>";
         }
     }
     // print out database already exists
     else {
-        echo "Database already exists. ";
+        echo "<p>Database already exists.</p> ";
     }
-     //ccreate a query/commmand and this query is gonna ceate a table
+     //create a query/commmand and this query is gonna ceate a table
     //use table to put information on the database
     //the table post must have id,tiltle, and post text
     //have different int, text, and none of them can not be empty/null   
@@ -42,6 +42,17 @@
             . "post text NOT NULL,"
             . "PRIMARY KEY (id) ) ");
     
+
+    
+    //check to see if query succesfully created at table
+    if($query) {
+    // successfully created a table
+        echo "<p>Succesfully created table: posts</p>";
+    }
+    else {
+    //error not succesfull
+        echo "<p>$connection->error</p>";
+    }
     // close the connection     
         $connection->close();
             
