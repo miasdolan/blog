@@ -1,0 +1,9 @@
+body{
+    background-color: red;
+}
+//makes the color change 
+@media (max-width: 320px) {
+    body {
+        background-color: blue;
+    }
+}
