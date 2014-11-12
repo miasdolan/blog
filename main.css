@@ -1,9 +1,16 @@
 body{
-    background-color: red;
+    background-color: green;
+    font-size: 30px;
+    text-align: left;
 }
 //makes the color change 
 @media (max-width: 320px) {
     body {
         background-color: blue;
+    }
+}
+@media (min-width: 1024px) {
+    body {
+        background-color: red;
     }
 }
