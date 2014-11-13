@@ -1,7 +1,7 @@
 <?php
 
   // brings dadtbase.php file to this page by using the require_once function 
-    require_once(__DIR__ . "/../model/database.php");
+    require_once(__DIR__ . "/../model/config.php");
 
   //creates a connection to localhost
     $connection = new mysqli($host, $username, $password);

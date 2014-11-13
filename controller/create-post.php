@@ -1,6 +1,6 @@
 <?php
     //require database file in model folder 
-    require_once(__DIR__ . "/../model/database.php");
+    require_once(__DIR__ . "/../model/config.php");
     // open connection to database
    $connection = new mysqli($host, $username, $password, $database);
     
