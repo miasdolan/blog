@@ -5,4 +5,11 @@ class Databse {
     private $username;
     private $password;
     private $database;
+    
+    public function __construct($host, $username, $password, $database ) {
+       $this->hoost = $host;
+       $this->username = $username;
+       $this->password = $password;
+       $this->database = $database;
+    }
 }
