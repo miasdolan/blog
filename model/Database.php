@@ -12,4 +12,17 @@ class Databse {
        $this->password = $password;
        $this->database = $database;
     }
+    
+    public function openConnection() {
+        
+    }
+    
+    public function closeConnection() {
+        
+    }
+
+    public function query($string) {
+        
+    }
 }
+
