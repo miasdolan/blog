@@ -8,7 +8,6 @@
     
    // checks connection for error 
     if ($connection->connect_error) {
-        // if theres an error the connection dies 
         die ("<p>Error:" . $connection->connect_error . "</p>");
    }
  
