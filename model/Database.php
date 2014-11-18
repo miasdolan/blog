@@ -22,9 +22,12 @@ die ("<p>Error:" . $this->connection->connect_error . "</p>");
 }
 }
 
-public function openConnection(){
+public function closeConnection(){
+ if(isset($this->connection)){
+     $this->connection->close();
+  }
 
-}
+ }
 
 public function query($string) {
 
